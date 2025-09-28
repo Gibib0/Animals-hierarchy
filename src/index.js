@@ -32,3 +32,20 @@ class Mammals extends Animal {
 	}
 }
 
+class Birds extends Animal {
+	constructor(name, age, weight, limbAmount) {
+		super(name, age, weight, limbAmount)
+	}
+
+	static isBird(obj) {
+		return obj instanceof Birds
+	}
+
+	move() {
+		console.log('Its flying');
+	}
+
+	say() {
+		console.log('It chirps');
+	}
+}
