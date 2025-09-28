@@ -18,7 +18,7 @@ class Animal {
 	}
 
 	say() {
-		console.log(`${this.name} talks`);
+		console.log(`${this.name} sounds`);
 	}
 
 	eat() {
@@ -108,5 +108,63 @@ class Primates extends Mammals {
 
 	static isPrimate(obj) {
 		return obj instanceof Primates
+	}
+}
+
+class Dog extends Predators {
+	constructor(name, age, weight, limbAmount = 4) {
+		super(name, age, weight, limbAmount);
+	}
+
+	static isDog(obj) {
+		return obj instanceof Dog
+	}
+
+	move() {
+		console.log(`${this.name} runs`);
+	}
+
+	eat() {
+		console.log(`${this.name} eats bone`);
+	}
+}
+
+class Dolphin extends Whales {
+	constructor(name, age, weight, limbAmount) {
+		super(name, age, weight, limbAmount);
+	}
+
+	static isDolphin(obj) {
+		return obj instanceof Dolphin
+	}
+
+	move() {
+		console.log(`${this.name} swims`);
+	}
+
+	eat() {
+		console.log(`${this.name} eats fish`);
+	}
+}
+
+class Human extends Primates {
+	constructor(name, age, weight, limbAmount = 4) {
+		super(name, age, weight, limbAmount);
+	}
+
+	static isHuamn(obj) {
+		return obj instanceof Human
+	}
+
+	move() {
+		console.log(`${this.name} walks`);
+	}
+
+	say() {
+		console.log(`${this.name} talks`);
+	}
+
+	eat() {
+		console.log(`${this.name} eats fastfood`);
 	}
 }
