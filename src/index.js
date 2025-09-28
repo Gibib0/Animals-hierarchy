@@ -14,15 +14,15 @@ class Animal {
 	}
 
 	move() {
-		console.log('Its moving');
+		console.log(`${this.name} moving`);
 	}
 
 	say() {
-		console.log('Its talking');
+		console.log(`${this.name} talking`);
 	}
 
 	eat() {
-		console.log('Its eating');
+		console.log(`${this.name} eating`);
 	}
 }
 
@@ -42,10 +42,28 @@ class Birds extends Animal {
 	}
 
 	move() {
-		console.log('Its flying');
+		console.log(`${this.name} flying`);
 	}
 
 	say() {
-		console.log('It chirps');
+		console.log(`${this.name} chirps`);
+	}
+}
+
+class Fish extends Animal {
+	constructor(name, age, weight, limbAmount) {
+		super(name, age, weight, limbAmount)
+	}
+
+	static isFish(obj) {
+		return obj instanceof Fish
+	}
+
+	move() {
+		console.log(`${this.name} swimming`);
+	}
+
+	say() {
+		console.log(`${this.name} is silent. Its a fish`);
 	}
 }
