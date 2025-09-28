@@ -206,6 +206,7 @@ human1.say()
 console.log(dog1.age);
 console.log(dolphin1.weight);
 console.log(human1.limbAmount);
+console.log(dog1.limbAmount);
 
 console.log(Animal.isAnimal(dog1));
 console.log(Mammals.isMammal(dolphin1));
