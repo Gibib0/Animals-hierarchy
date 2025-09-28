@@ -25,3 +25,10 @@ class Animal {
 		console.log('Its eating');
 	}
 }
+
+class Mammals extends Animal {
+	constructor(name, age, weight, limbAmount) {
+		super(name, age, weight, limbAmount)
+	}
+}
+
